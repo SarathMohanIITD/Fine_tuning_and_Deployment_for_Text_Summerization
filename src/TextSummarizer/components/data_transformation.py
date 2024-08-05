@@ -1,6 +1,6 @@
 import os
 from textSummarizer.logging import logger
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer  # Pretrained tokenizer
 from datasets import load_dataset, load_from_disk
 from textSummarizer.entity import DataTransformationConfig
 
@@ -14,6 +14,9 @@ class DataTransformation:
 
     
     def convert_examples_to_features(self,example_batch):
+        '''
+        Converts words to tokens
+        '''
         input_encodings = self.tokenizer(example_batch['dialogue'] , max_length = 1024, truncation = True )
         
         with self.tokenizer.as_target_tokenizer():
