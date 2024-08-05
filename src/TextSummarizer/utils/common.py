@@ -3,8 +3,8 @@ from box.exceptions import BoxValueError
 import yaml
 from textSummarizer.logging import logger
 from ensure import ensure_annotations
-from box import ConfigBox
-from pathlib import Path
+from box import ConfigBox   # To access values as key.value
+from pathlib import Path  # So that we can have a unified path over any os
 from typing import Any
 
 
