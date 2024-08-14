@@ -8,12 +8,7 @@ This repository contains the code for fine-tuning and deploying a text summariza
 
 The Fine Tuning and Deployment for Text Summarization project aims to provide an end-to-end solution for text summarization. It involves fine-tuning a pre-trained transformer model on a specific dataset and deploying the model for real-time summarization tasks.
 
-## Features
 
-- **Fine-Tuning**: Customizes a pre-trained transformer model for text summarization.
-- **Deployment**: Deploys the fine-tuned model using a web interface for easy interaction.
-- **Scalability**: Handles large volumes of text efficiently.
-- **Customizable**: Adaptable to various datasets and summarization requirements.
 
 ## Architecture
 
